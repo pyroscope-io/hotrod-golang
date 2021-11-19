@@ -16,7 +16,7 @@ RUN apk add ca-certificates
 
 COPY --from=build_base /tmp/hotrod/bin/hotrod /hotrod
 
-EXPOSE 8080 8081 8082 8083
+EXPOSE 8080 8081 8082 8083 6060
 
 ENTRYPOINT ["/hotrod"]
 CMD ["all"]
